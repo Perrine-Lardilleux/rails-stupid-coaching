@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<div class=container ml-3>
+  <h1 class= mt-5> Stupid Coaching </h1>
+  <div class="row alert alert-light" >
+    <p><%= @question %>
+    <br><br><em> -You </em></p>
+  </div>
+  <div class="row alert alert-warning">
+    <p><%= @answer %>
+    <br><br><em> -Your coach </em></p>
+  </div>
+  <div class="row">
+    <%= link_to 'Ask a new question', ask_path %>
+  </div>
+</div>
